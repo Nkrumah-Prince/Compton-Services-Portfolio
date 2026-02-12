@@ -208,3 +208,72 @@ input:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
 }
+/* Hero Section Upgrade */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1a73e8, #4285f4);
+  color: white;
+}
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.hero .btn {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  background: #fff;
+  color: #1a73e8;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.hero .btn:hover {
+  background: #1a73e8;
+  color: white;
+  transform: scale(1.1);
+}
+/* Card Upgrade */
+.card, .project-card {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #1a73e8, #4285f4) border-box;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.card:hover, .project-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: #555;
+}
+/* WhatsApp Floating Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 1.5em;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
