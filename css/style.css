@@ -176,3 +176,35 @@ footer {
     gap: 10px;
   }
 }
+/* Hidden sections for scroll animations */
+section.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card hover animation already handled by JS */
+/* Optional: Smooth transition for all cards */
+.card, .project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover animation */
+.btn {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Add small transition for inputs and textarea focus */
+input:focus, textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
+}
